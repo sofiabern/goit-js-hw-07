@@ -18,4 +18,5 @@ function changeColorHandler() {
   const color = getRandomHexColor()
   props.spanEl.textContent = color;
   props.bodyEl.style.backgroundColor = color; 
+  
 }

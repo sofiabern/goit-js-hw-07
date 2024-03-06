@@ -21,9 +21,11 @@ function inputHandler(evt) {
 }
 
 props.btnCreateEl.addEventListener("click", createHandler);
-function createHandler() {
-  if (amount < 0 || amount > 101) {
+function createHandler(evt) {
+  if (amount < 1 || amount > 101) {
     alert("The required amount is way too big or small! Change it, please");
+    amount = 0;
+    evt.currentTarget.value = "";
     return;
   }
 
@@ -35,6 +37,7 @@ function createHandler() {
 props.btnDestroyEl.addEventListener("click", destroyHandler);
 function destroyHandler() {
 props.boxEl.innerHTML = "";
+
 }
 
 function createBoxes(amount) {
