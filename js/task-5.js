@@ -4,7 +4,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const props = {
+const bodyElements = {
   bodyEl : document.querySelector('body'),
   spanEl : document.querySelector('.color'),
   btnEl: document.querySelector('.change-color')
@@ -12,11 +12,11 @@ const props = {
 
 
 
-props.btnEl.addEventListener('click', changeColorHandler)
+bodyElements.btnEl.addEventListener('click', changeColorHandler)
 
 function changeColorHandler() {
   const color = getRandomHexColor()
-  props.spanEl.textContent = color;
-  props.bodyEl.style.backgroundColor = color; 
+  bodyElements.spanEl.textContent = color;
+  bodyElements.bodyEl.style.backgroundColor = color; 
   
 }

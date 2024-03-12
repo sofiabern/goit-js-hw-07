@@ -29,12 +29,11 @@ const images = [
 ];
 
 const ulEl = document.querySelector('.gallery')
-// console.dir(ulEl)
 
 function createMarkUp(arr){
   return arr.map(({url, alt}) =>{
     return `<li>
-    <img src="${url}" alt="${alt}" width="360" height="300" class="img">
+    <img src="${url}" alt="${alt}" width="360" height="300" class="gallery-img">
     </li>`
     }).join("")
 }

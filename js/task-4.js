@@ -1,8 +1,5 @@
 const formEl = document.querySelector('.login-form')
 
-const form = {  
-}
-
 formEl.addEventListener('submit', formHandler)
 
 function formHandler(evt){
@@ -14,8 +11,11 @@ function formHandler(evt){
         return
     }
 
-    form.email = formEl.elements.email.value.trim();
-    form.password=formEl.elements.password.value.trim();
+    const form = {
+        email: formEl.elements.email.value.trim(),
+        password: formEl.elements.password.value.trim()
+    };
+
     console.log(form)
     formEl.reset()
     
