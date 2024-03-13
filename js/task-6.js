@@ -22,6 +22,11 @@ function inputHandler(evt) {
 
 props.btnCreateEl.addEventListener("click", createHandler);
 function createHandler(evt) {
+  if(!amount){
+    alert('Choose some amount!')
+    return
+  }
+
   if (amount < 1 || amount > 101) {
     alert("The required amount is way too big or small! Change it, please");
     amount = 0;

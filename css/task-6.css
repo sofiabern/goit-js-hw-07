@@ -1,15 +1,71 @@
-/* #controls {
+#controls {
     background-color: #F6F6FE;
-
+ 
+    display: flex;
+    width: 486px;
     padding: 32px;
     margin-bottom: 16px;
+    border-radius: 10px;
 }
 
 #boxes {
     background-color: #F6F6FE;
     padding: 32px;
     border-radius: 10px;
+    width: 486px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
-} */
+} 
+
+input[type="number"] {
+  font-family: Montserrat, sans-serif;
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+
+  width: 150px;
+  height: 40px;
+  padding: 8px 0px;
+  margin-right: 16px;
+  border: solid 1px #808080;
+  border-radius: 8px;
+  outline: solid 2px transparent;
+
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+button{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+
+    min-width: 120px;
+    min-height: 40px;
+    padding: 8px 0;
+    border: transparent;
+    border-radius: 8px;
+}
+
+button:not(:last-of-type){
+    margin-right: 16px;
+}
+
+button[data-create] {
+ background-color: #4E75FF;
+}
+
+button[data-destroy] {
+    background-color: #FF4E4E;
+   }
+
+
+   
