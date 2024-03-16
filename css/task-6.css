@@ -1,15 +1,15 @@
 #controls {
     background-color: #F6F6FE;
  
-    display: flex;
-    width: 486px;
+    display: inline-flex;
+    gap: 16px;
     padding: 32px;
     margin-bottom: 16px;
     border-radius: 10px;
 }
 
 #boxes {
-    background-color: #F6F6FE;
+    background-color: transparent;
     padding: 32px;
     border-radius: 10px;
     width: 486px;
@@ -28,7 +28,6 @@ input[type="number"] {
   width: 150px;
   height: 40px;
   padding: 8px 0px;
-  margin-right: 16px;
   border: solid 1px #808080;
   border-radius: 8px;
   outline: solid 2px transparent;
@@ -53,10 +52,6 @@ button{
     padding: 8px 0;
     border: transparent;
     border-radius: 8px;
-}
-
-button:not(:last-of-type){
-    margin-right: 16px;
 }
 
 button[data-create] {

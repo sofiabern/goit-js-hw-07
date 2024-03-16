@@ -34,6 +34,7 @@ function createHandler(evt) {
     return;
   }
 
+  props.boxEl.style.backgroundColor = "#F6F6FE";
   createBoxes(amount);
   amount = 0;
   props.inputEl.value = "";
@@ -42,6 +43,7 @@ function createHandler(evt) {
 props.btnDestroyEl.addEventListener("click", destroyHandler);
 function destroyHandler() {
 props.boxEl.innerHTML = "";
+props.boxEl.style.backgroundColor = "transparent";
 
 }
 
